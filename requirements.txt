@@ -12,7 +12,6 @@ sphinxcontrib-httpdomain
 psycopg2
 nilsimsa
 facebook-sdk
-hallucination
 winnowing
 pybase62
 pytest
