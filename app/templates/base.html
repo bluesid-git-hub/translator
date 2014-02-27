@@ -53,6 +53,9 @@
                 <li><a href="http://twitter.com/btrtranslator" target="_blank">{{ _("Twitter") }}</a></li>
               </ul>
             </li>
+            <li>
+              <a href="{{ url_for('donate') }}">{{ _("Donate") }}</a>
+            </li>
           </ul>
           <ul class="nav pull-right">
             {% if current_user.is_anonymous() %}

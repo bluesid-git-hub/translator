@@ -625,6 +625,14 @@ def privacy():
     return render_template('privacy.html', **context)
 
 
+@app.route('/donate')
+def donate():
+    context = dict(
+        version=__version__,
+        locale=get_locale(),
+    )
+    return render_template('donate.html', **context)
+
 @app.route('/flush-queue')
 def flush_notification_queue():
     """I know this is a pretty silly solution, but for some reason gettext()
